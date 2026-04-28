@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraudwatch|Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="fraudwatch.css">
+</head>
+
+<body>
+
+     <!-- ── NAV ── -->=
+<nav class="page-nav">
+  <div class="nav-logo">FraudWatch</div>
+  <a class="nav-tab" href="index.html">Landing</a>
+  <a class="nav-tab active" href="report.html">Report</a>
+  <a class="nav-tab" href="verify.html">Verify</a>
+  <a class="nav-tab" href="feed.html">Feed</a>
+  <a class="nav-tab" href="report-detail.html">Report Detail</a>
+</nav>
+
+    <div id="page-report" class="page active">
+
+        <div class="report-header">
+            <div class="eyebrow">Report a Scam</div>
+            <h1 class="page-title">Tell us what happened.</h1>
+            <p class="page-sub">Your report is anonymous and helps protect the entire community. Be as specific as
+                possible — details matter.</p>
+        </div>
+
+        <div class="report-layout">
+
+
+            <div>
+                <!-- Step 1 -->
+                <div class="form-card" style="margin-bottom:1.2rem;">
+                    <h3>Step 1 — Scammer's Contact Details</h3>
+                    <div class="input-row">
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input class="form-input" type="text" placeholder="e.g. 0812 345 6789" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Account Number (if known)</label>
+                            <input class="form-input" type="text" placeholder="10-digit account number" />
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="form-group">
+                            <label class="form-label">Bank Name</label>
+                            <select class="form-select">
+                                <option value="">Select bank…</option>
+                                <option>GTBank</option>
+                                <option>Access Bank</option>
+                                <option>Opay</option>
+                                <option>Moniepoint</option>
+                                <option>Kuda</option>
+                                <option>First Bank</option>
+                                <option>Zenith Bank</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Account Name (if known)</label>
+                            <input class="form-input" type="text" placeholder="Name on the account" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="form-card" style="margin-bottom:1.2rem;">
+                    <h3>Step 2 — Type of Scam</h3>
+                    <label class="form-label" style="margin-bottom:0.8rem;display:block;">Select the category that best
+                        describes what happened</label>
+                    <div class="category-grid">
+                        <button class="cat-btn selected">🛍️ Fake Vendor / Seller</button>
+                        <button class="cat-btn">📲 OTP / SIM Theft</button>
+                        <button class="cat-btn">📈 Investment Fraud</button>
+                        <button class="cat-btn">🏦 Fake Transfer Alert</button>
+                        <button class="cat-btn">💼 Job Scam</button>
+                        <button class="cat-btn">🏠 Rental Fraud</button>
+                        <button class="cat-btn">🎁 Prize / Lottery Scam</button>
+                        <button class="cat-btn">❓ Other</button>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="form-card" style="margin-bottom:1.2rem;">
+                    <h3>Step 3 — What Happened</h3>
+                    <div class="form-group">
+                        <label class="form-label">Describe the scam</label>
+                        <textarea class="form-textarea"
+                            placeholder="Describe what happened in detail. E.g. 'I paid ₦45,000 for a laptop advertised on Instagram. After I sent the money to their Moniepoint account, they blocked me on WhatsApp and Instagram...'"></textarea>
+                    </div>
+                    <div class="input-row">
+                        <div class="form-group">
+                            <label class="form-label">Amount Lost (₦)</label>
+                            <input class="form-input" type="number" placeholder="e.g. 45000" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Date Scam Occurred</label>
+                            <input class="form-input" type="date" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Platform Used (optional)</label>
+                        <input class="form-input" type="text"
+                            placeholder="e.g. WhatsApp, Instagram DM, Phone call, Jiji, Facebook Marketplace…" />
+                    </div>
+                </div>
+
+                <button class="btn btn--primary" style="width:100%;justify-content:center;padding:1rem;">Submit Report
+                    →</button>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar-tip">
+                <h4>Tips for a strong report</h4>
+
+                <div class="tip-item">
+                    <div class="tip-icon">📱</div>
+                    <p class="tip-text"><strong>Phone number is most important.</strong> Even if you don't have the
+                        account number, a phone number is enough to flag someone.</p>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">🔢</div>
+                    <p class="tip-text"><strong>Account name matters.</strong> Fraudsters reuse names across accounts —
+                        it helps us link related reports.</p>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">📝</div>
+                    <p class="tip-text"><strong>Be specific in your description.</strong> The AI uses your words to
+                        explain the tactic to others — the more detail, the better the warning.</p>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">🔒</div>
+                    <p class="tip-text"><strong>Your identity is never shown.</strong> Reports are posted anonymously.
+                        We only store what you type here.</p>
+                </div>
+
+                <div class="privacy-note">
+                    🔒 Your report is anonymous. We do not collect your name, email, or device information. Only the
+                    scammer's details and your description are stored.
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

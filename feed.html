@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraudwatch|Feed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="fraudwatch.css">
+</head>
+<body>
+
+    <nav class="page-nav">
+  <div class="nav-logo">FraudWatch</div>
+  <a class="nav-tab" href="index.html">Landing</a>
+  <a class="nav-tab" href="report.html">Report</a>
+  <a class="nav-tab" href="verify.html">Verify</a>
+  <a class="nav-tab active" href="feed.html">Feed</a>
+  <a class="nav-tab" href="report-detail.html">Report Detail</a>
+</nav>
+    <div id="page-feed" class="page active">
+
+        <!-- hero-section -->
+  <div class="feed-header">
+    <div>
+      <div class="eyebrow">Scam Feed</div>
+      <h1 class="page-title" style="font-size:clamp(2rem,4vw,3rem);">Live fraud reports.</h1>
+      <p class="page-sub">Community-submitted reports, updated in real time. Search, filter, and stay ahead of scammers.</p>
+    </div>
+    <button class="btn btn--primary" onclick="showPage('report', document.querySelectorAll('.nav-tab')[1])">+ Report a Scam</button>
+  </div>
+
+  <div style="padding: 1rem 2rem 0; max-width:1100px; margin:0 auto;">
+    <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap;">
+      <input class="form-input" style="max-width:320px;padding:0.65rem 1rem;" type="text" placeholder="🔍  Search reports…"/>
+      <div class="feed-filters">
+        <button class="filter-pill active">All</button>
+        <button class="filter-pill">Fake Vendor</button>
+        <button class="filter-pill">OTP Theft</button>
+        <button class="filter-pill">Investment</button>
+        <button class="filter-pill">Fake Alert</button>
+        <button class="filter-pill">Job Scam</button>
+        <button class="filter-pill">High Risk Only</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="feed-layout">
+    <div class="feed-list">
+
+
+  <!-- Card 1 -->
+  <div class="feed-card pinned">
+    <div class="feed-card-top">
+      <div class="feed-card-meta">
+        <span class="chip chip--high">High Risk</span>
+        <span class="chip chip--cat">Fake Vendor</span>
+        <span class="feed-card-time">2 hrs ago</span>
+      </div>
+      <span class="chip chip--cat" style="font-size:0.6rem;">📌 Pinned</span>
+    </div>
+    <div class="feed-number">0812 345 6789 · GTBank 0123456789</div>
+    <p class="feed-desc">Advertised a Yamaha turntable on Instagram. Convinced buyer to switch from Opay to Moniepoint due to "network issues." After receiving ₦65,000, blocked buyer on all platforms. This number has 7 reports in the last 14 days.</p>
+    <div class="feed-card-footer">
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        <span class="chip chip--cat">WhatsApp</span>
+        <span class="chip chip--cat">Instagram</span>
+        <span style="font-size:0.75rem;color:var(--muted);">₦65,000 lost</span>
+      </div>
+      <div class="vote-row">
+        <button class="vote-btn">👍 Helpful (23)</button>
+        <span class="view-link" onclick="showPage('detail', document.querySelectorAll('.nav-tab')[4])">View full report →</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="feed-card">
+    <div class="feed-card-top">
+      <div class="feed-card-meta">
+        <span class="chip chip--medium">Medium</span>
+        <span class="chip chip--cat">Investment Fraud</span>
+        <span class="feed-card-time">5 hrs ago</span>
+      </div>
+    </div>
+    <div class="feed-number">0701 234 5678</div>
+    <p class="feed-desc">Promoted a fake forex trading platform via WhatsApp broadcast. Promised 50% returns in 7 days. Collected ₦120,000 from at least 3 people before going offline. Uses the name "Prince Capital FX."</p>
+    <div class="feed-card-footer">
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        <span class="chip chip--cat">WhatsApp</span>
+        <span style="font-size:0.75rem;color:var(--muted);">₦120,000 lost</span>
+      </div>
+      <div class="vote-row">
+        <button class="vote-btn">👍 Helpful (11)</button>
+        <span class="view-link">View full report →</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="feed-card">
+    <div class="feed-card-top">
+      <div class="feed-card-meta">
+        <span class="chip chip--medium">Medium</span>
+        <span class="chip chip--cat">Fake Transfer Alert</span>
+        <span class="feed-card-time">Yesterday</span>
+      </div>
+    </div>
+    <div class="feed-number">UBA — 2109876543</div>
+    <p class="feed-desc">Buyer on Jiji sent a fake Moniepoint screenshot as proof of payment for a used iPhone. Collected the phone and never completed the transfer. Account name: Emeka O.</p>
+    <div class="feed-card-footer">
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        <span class="chip chip--cat">Jiji</span>
+        <span style="font-size:0.75rem;color:var(--muted);">₦95,000 lost</span>
+      </div>
+      <div class="vote-row">
+        <button class="vote-btn">👍 Helpful (8)</button>
+        <span class="view-link">View full report →</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="feed-card">
+    <div class="feed-card-top">
+      <div class="feed-card-meta">
+        <span class="chip chip--low">Low</span>
+        <span class="chip chip--cat">Job Scam</span>
+        <span class="feed-card-time">2 days ago</span>
+      </div>
+    </div>
+    <div class="feed-number">0803 456 7890</div>
+    <p class="feed-desc">Posed as HR for a remote data entry job. Asked applicants to pay ₦5,000 "training fee" before onboarding. No job materialised after payment. Operating via Telegram group "Remote Jobs Nigeria 2025."</p>
+    <div class="feed-card-footer">
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        <span class="chip chip--cat">Telegram</span>
+        <span style="font-size:0.75rem;color:var(--muted);">₦5,000 lost</span>
+      </div>
+      <div class="vote-row">
+        <button class="vote-btn">👍 Helpful (5)</button>
+        <span class="view-link">View full report →</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load more -->
+  <button class="btn btn--ghost" style="width:100%;justify-content:center;margin-top:0.5rem;">Load more reports</button>
+</div>
+
+<!-- Sidebar -->
+<div class="feed-sidebar">
+  <div class="sidebar-card">
+    <h4>This Month</h4>
+    <div class="stat-pill-row">
+      <div class="stat-pill">
+        <span class="stat-pill-label">Total Reports</span>
+        <span class="stat-pill-val">347</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-pill-label">Total Lost (est.)</span>
+        <span class="stat-pill-val">₦28.4M</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-pill-label">High Risk Flags</span>
+        <span class="stat-pill-val">89</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-pill-label">Searches Run</span>
+        <span class="stat-pill-val">9,300</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>Top Scam Types</h4>
+    <div>
+      <div class="top-scam-row">
+        <span class="top-scam-rank">1</span>
+        <span class="top-scam-name">Fake Vendor</span>
+        <span class="top-scam-count">142 reports</span>
+      </div>
+      <div class="top-scam-row">
+        <span class="top-scam-rank">2</span>
+        <span class="top-scam-name">Investment Fraud</span>
+        <span class="top-scam-count">78 reports</span>
+      </div>
+      <div class="top-scam-row">
+        <span class="top-scam-rank">3</span>
+        <span class="top-scam-name">Fake Transfer Alert</span>
+        <span class="top-scam-count">61 reports</span>
+      </div>
+      <div class="top-scam-row">
+        <span class="top-scam-rank">4</span>
+        <span class="top-scam-name">OTP / SIM Theft</span>
+        <span class="top-scam-count">44 reports</span>
+      </div>
+      <div class="top-scam-row">
+        <span class="top-scam-rank">5</span>
+        <span class="top-scam-name">Job Scam</span>
+        <span class="top-scam-count">22 reports</span>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn--primary" style="width:100%;justify-content:center;" onclick="showPage('report', document.querySelectorAll('.nav-tab')[1])">🚨 Report a Scam</button>
+</div>
+
+
+  </div>
+</div>
+</body>
+</html>

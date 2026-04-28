@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraudwatch|Verify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="fraudwatch.css">
+</head>
+<body>
+    <nav class="page-nav">
+  <div class="nav-logo">FraudWatch</div>
+  <a class="nav-tab" href="index.html">Landing</a>
+  <a class="nav-tab" href="report.html">Report</a>
+  <a class="nav-tab active" href="verify.html">Verify</a>
+  <a class="nav-tab" href="feed.html">Feed</a>
+  <a class="nav-tab" href="report-detail.html">Report Detail</a>
+</nav>
+
+    
+   <div id="page-verify" class="page active">
+
+  <div class="verify-hero">
+    <div class="verify-hero-bg"></div>
+    <div class="eyebrow" style="justify-content:center;">Verify Before You Pay</div>
+    <h1>Is this number safe?</h1>
+    <p>Search any Nigerian account number or phone number to see if it's been flagged for fraud.</p>
+
+
+<div class="search-bar">
+  <input class="search-input" type="text" placeholder="Enter account number or phone number…" value="0812 345 6789"/>
+  <button class="search-btn">Search</button>
+</div>
+<div class="search-tabs">
+  <button class="search-tab active">Phone Number</button>
+  <button class="search-tab">Account Number</button>
+</div>
+
+
+  </div>
+
+  <!-- Result -->
+
+  <div class="result-section">
+    <div style="margin-bottom:1.2rem;display:flex;align-items:center;gap:0.8rem;">
+      <span style="font-size:0.8rem;color:var(--muted);">Results for</span>
+      <span style="font-family:'Epilogue',sans-serif;font-size:0.95rem;font-weight:500;color:var(--text);">0812 345 6789</span>
+    </div>
+
+
+<div class="result-main">
+  <div class="result-card">
+    <div class="result-header">
+      <div>
+        <div class="result-number">0812 345 6789</div>
+        <div class="result-bank">MTN Nigeria · Last reported: 2 hours ago</div>
+      </div>
+      <div class="risk-badge-lg">
+        <span class="risk-label-sm">Risk Level</span>
+        <span class="risk-pill risk-high">HIGH RISK</span>
+      </div>
+    </div>
+    <div class="result-body">
+      <div class="result-stat-row">
+        <div class="result-stat">
+          <div class="result-stat-num">7</div>
+          <div class="result-stat-label">Reports</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat-num">₦380K</div>
+          <div class="result-stat-label">Total Lost</div>
+        </div>
+        <div class="result-stat">
+          <div class="result-stat-num">14d</div>
+          <div class="result-stat-label">Active Window</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.2rem;">
+        <span class="chip chip--cat">Fake Vendor</span>
+        <span class="chip chip--cat">WhatsApp</span>
+        <span class="chip chip--cat">Electronics</span>
+      </div>
+
+      <div class="ai-box">
+        <div class="ai-box-label">⚡ AI Pattern Analysis</div>
+        <p>This number uses a <strong style="color:var(--text);">platform-switching tactic</strong> — convincing buyers to move from a traceable payment app (like Opay) to a less reversible one (like Moniepoint) by citing fake "network issues." Once payment is received, the seller blocks all contact and disappears. This is a premeditated fraud pattern, not an accidental issue.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-actions">
+    <div class="action-card">
+      <h4>What to do</h4>
+      <div style="display:flex;flex-direction:column;gap:0.6rem;">
+        <button class="btn btn--primary" style="width:100%;justify-content:center;font-size:0.72rem;">🚨 Report This Number</button>
+        <button class="btn btn--ghost" style="width:100%;justify-content:center;font-size:0.72rem;">📲 Share Warning</button>
+      </div>
+      <div class="privacy-note" style="margin-top:0.8rem;">⚠️ Do NOT send money to this number. Contact your bank immediately if you already have.</div>
+    </div>
+
+    <div class="action-card">
+      <h4>Recent Reports (7)</h4>
+      <div class="report-mini-list">
+        <div class="report-mini">
+          <div class="report-mini-type">Fake Vendor — ₦65,000</div>
+          <div class="report-mini-date">2 hours ago · WhatsApp</div>
+        </div>
+        <div class="report-mini">
+          <div class="report-mini-type">Fake Vendor — ₦45,000</div>
+          <div class="report-mini-date">1 day ago · Instagram</div>
+        </div>
+        <div class="report-mini">
+          <div class="report-mini-type">Fake Vendor — ₦80,000</div>
+          <div class="report-mini-date">3 days ago · WhatsApp</div>
+        </div>
+        <div class="report-mini" style="cursor:pointer;">
+          <div class="report-mini-type" style="color:var(--info);">View all 7 reports →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+
+</div>
+ 
+</body>
+</html>
